@@ -1,0 +1,74 @@
+/* Theme Variables */
+:root[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --hover-bg: rgba(228, 0, 0, 0.1);
+}
+
+:root[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-color: #333333;
+  --card-bg: #2a2a2a;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --nav-bg: rgba(26, 26, 26, 0.9);
+  --hover-bg: rgba(228, 0, 0, 0.2);
+}
+
+/* Common Variables */
+:root {
+  --primary-red: #e40000;
+  --secondary-red: #ff4646;
+  --accent-red: #ff1f1f;
+  --gradient-red: linear-gradient(135deg, var(--primary-red), var(--secondary-red));
+  --shadow-red: 0 5px 20px rgba(228, 0, 0, 0.3);
+}
+
+/* Theme Transition */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ensure text is visible in both themes */
+.navbar .nav-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: var(--primary-red);
+}
+
+.glass-card {
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.btn-outline {
+  color: var(--primary-red);
+  border-color: var(--primary-red);
+}
+
+.btn-outline:hover {
+  background: var(--primary-red);
+  color: white;
+}
+
+/* Improve card visibility */
+.plan-card, .feature-card {
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.plan-features li, .feature-list li {
+  color: var(--text-secondary);
+}
