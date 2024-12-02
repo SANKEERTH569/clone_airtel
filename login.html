@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel - Login</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/airtel-logo.svg" alt="Airtel Logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-card">
+                <h2>Login to Airtel</h2>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <p class="auth-links">
+                    <a href="#">Forgot Password?</a>
+                    <span>|</span>
+                    <a href="signup.html">New User? Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

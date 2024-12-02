@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel - Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header class="animate-slideIn">
+        <nav class="navbar glass-card">
+            <div class="logo">
+                <img src="https://www.obopay.com/obopay/wp-content/uploads/2017/04/airtel-logo.png" alt="Airtel Logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active hover-glow">Home</a>
+                <a href="recharge.html" class="hover-glow">Recharge</a>
+                <a href="postpaid.html" class="hover-glow">Postpaid</a>
+                <a href="broadband.html" class="hover-glow">Broadband</a>
+                <a href="dth.html" class="hover-glow">DTH</a>
+                <a href="bank.html" class="hover-glow">Bank</a>
+            </div>
+            <div class="nav-actions">
+                <button onclick="toggleTheme()" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path class="sun" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        <path class="moon" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                    </svg>
+                </button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline hover-glow">Login</a>
+                    <a href="signup.html" class="btn btn-primary animate-pulse">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Experience the Power of 5G</h1>
+                <p class="hero-subtitle">Connect to India's fastest and most reliable network</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <span class="feature-number">500M+</span>
+                        <span class="feature-text">Active Users</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-number">98%</span>
+                        <span class="feature-text">Network Coverage</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-number">5G</span>
+                        <span class="feature-text">Ready Network</span>
+                    </div>
+                </div>
+                <a href="recharge.html" class="btn btn-primary animate-pulse">Recharge Now</a>
+            </div>
+        </section>
+
+        <section class="services" data-aos="fade-up">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-cards">
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <img src="images/mobile.svg" alt="Mobile">
+                    </div>
+                    <h3>Mobile</h3>
+                    <p>Experience lightning-fast 5G speeds and unlimited possibilities with our mobile plans.</p>
+                    <a href="recharge.html" class="btn btn-primary">View Plans</a>
+                </div>
+
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <img src="images/wifi.svg" alt="Broadband">
+                    </div>
+                    <h3>Broadband</h3>
+                    <p>Super-fast fiber internet with speeds up to 1 Gbps for your home and office.</p>
+                    <a href="broadband.html" class="btn btn-primary">Get Connected</a>
+                </div>
+
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <img src="images/tv.svg" alt="DTH">
+                    </div>
+                    <h3>DTH</h3>
+                    <p>Crystal clear HD channels and premium content with Airtel Digital TV.</p>
+                    <a href="dth.html" class="btn btn-primary">Explore Packs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel - Banking</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/services.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar glass-card">
+            <div class="logo">
+                <img src="images/airtel-logo.svg" alt="Airtel Logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recharge.html">Recharge</a>
+                <a href="postpaid.html">Postpaid</a>
+                <a href="broadband.html">Broadband</a>
+                <a href="dth.html">DTH</a>
+                <a href="bank.html" class="active">Bank</a>
+            </div>
+            <div class="nav-actions">
+                <button onclick="toggleTheme()" class="theme-toggle">
+                    <svg class="theme-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path class="sun" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        <path class="moon" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                    </svg>
+                </button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="service-hero" data-aos="fade-up">
+            <div class="service-hero-content">
+                <h1>Airtel Payments Bank</h1>
+                <p>Banking made simple, secure, and accessible</p>
+            </div>
+        </section>
+
+        <section class="features-section" data-aos="fade-up">
+            <div class="container">
+                <h2>Banking Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <img src="images/savings.svg" alt="Savings">
+                        </div>
+                        <h3>Savings Account</h3>
+                        <p>Open a zero-balance savings account instantly</p>
+                        <ul class="feature-list">
+                            <li>4% Interest Rate</li>
+                            <li>No Minimum Balance</li>
+                            <li>Free Virtual Debit Card</li>
+                        </ul>
+                        <button class="btn btn-primary">Open Account</button>
+                    </div>
+
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <img src="images/payments.svg" alt="Payments">
+                        </div>
+                        <h3>Digital Payments</h3>
+                        <p>Make secure payments anywhere, anytime</p>
+                        <ul class="feature-list">
+                            <li>UPI Payments</li>
+                            <li>Bill Payments</li>
+                            <li>Money Transfer</li>
+                        </ul>
+                        <button class="btn btn-primary">Start Now</button>
+                    </div>
+
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <img src="images/insurance.svg" alt="Insurance">
+                        </div>
+                        <h3>Insurance</h3>
+                        <p>Protect yourself and your loved ones</p>
+                        <ul class="feature-list">
+                            <li>Personal Accident Cover</li>
+                            <li>Health Insurance</li>
+                            <li>Life Insurance</li>
+                        </ul>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
